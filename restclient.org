@@ -1,0 +1,17 @@
+* restclient
+
+#+BEGIN_SRC restclient
+GET http://localhost:4005/
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC text
+Hello World!
+GET http://localhost:4005/
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Length: 12
+Date: Wed, 02 Oct 2019 08:58:49 GMT
+Connection: keep-alive
+Request duration: 0.012261s
+#+END_SRC
