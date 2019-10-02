@@ -6,12 +6,21 @@
   "scripts": {
     "start:db": "docker run -p 5432:5432 --name db db-pg",
     "db:shell": "docker exec -it db psql -Upostgres",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx babel-node src/app.js"
   },
   "keywords": [],
   "author": "Lin Chen <lc1990linux@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "pg": "^7.12.1"
+    "koa": "^2.8.2",
+    "pg": "^7.12.1",
+    "typeorm": "^0.2.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2"
   }
 }
